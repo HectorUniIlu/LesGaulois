@@ -23,7 +23,16 @@ public class Romain {
 	}
 	
 	private String prendreParole() {
-		return "Le romain " + nom + " : ";
+		return "Le Romain " + nom + " : ";
 	}
 
+	public void recevoirCoup(int forceCoup) {
+		force = force-forceCoup;
+		if (force < 1) {
+			parler("J'abandonne !");
+		} else {
+			parler("Aïe");
+		}
+	}
+	
 }
