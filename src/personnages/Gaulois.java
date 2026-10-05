@@ -21,9 +21,6 @@ public class Gaulois {
 	private String prendreParole() {
 		return "Le Gaulois " + nom + " : ";
 	}
-	
-	public static void main(String[] args) {
-	}
 
 	@Override
 	public String toString() {
@@ -34,7 +31,7 @@ public class Gaulois {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
 		romain.recevoirCoup((force * effetPotion)/ 3);
 		if (effetPotion != 1) {
-			effetPotion -= 1;
+			effetPotion--;
 		}
 	}
 	

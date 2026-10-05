@@ -4,22 +4,18 @@ public class Chaudron {
 	private int quantitePotion;
 	private int forcePotion;
 	
-	public Chaudron() {
-		;
-	}
-	
 	public void remplirChaudron(int quantite, int forcePotion) {
 		quantitePotion = quantite;
 		this.forcePotion = forcePotion;
 	}
 	
-	public Boolean resterPotion() {
+	public boolean resterPotion() {
 		return quantitePotion > 0;
 	}
 	
 	public int prendreLouche() {
 		if (quantitePotion >= 1) {
-			quantitePotion -= 1;
+			quantitePotion--;
 		}
 		else {
 			forcePotion = 0;
